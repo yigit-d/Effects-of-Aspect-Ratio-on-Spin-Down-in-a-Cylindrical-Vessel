@@ -1,0 +1,22 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v2212                                 |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+
+gradU
+{
+    type            grad;
+    libs            (fieldFunctionObjects);
+    field           U;
+	writeControl  adjustableRunTime;
+	writeInterval   0.5;
+
+    executeControl	writeTime;
+
+}
+
+
+// ************************************************************************* //
